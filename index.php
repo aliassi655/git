@@ -15,7 +15,7 @@ $db = new MysqliDb(
 );
 
 $request = $_SERVER['REQUEST_URI'];
- 
+
 define('BASE_PATH', '/mvc/');
 
 
@@ -49,6 +49,8 @@ switch ($request) {
         $controller->showSearchedUsers($_GET['search_term']);
         break;
     default:
-    // var_dump($request);
+        // var_dump($request);
         break;
+
+        echo "<br>";
 }
